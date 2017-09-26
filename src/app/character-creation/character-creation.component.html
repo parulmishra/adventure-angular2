@@ -1,0 +1,13 @@
+<h3>
+  Create your Character
+</h3>
+<label>Name</label>
+<input #newName type="text" value="" class="form-control">
+
+<label>HairColor</label>
+<input  #newHairColor type="text" value="" class="form-control">
+
+<label>Hobby</label>
+<input #newHobby type="text" value="" class="form-control">
+
+<button (click)="addPlayer(newName.value, newHairColor.value, newHobby.value); newName.value=''; newHairColor.value=''; newHobby.value=''" routerLink="introduction">Add Player</button>

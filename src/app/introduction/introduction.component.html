@@ -1,0 +1,10 @@
+<div class="well">
+  <p>You wake up bright and early. Your {{players[0].hairColor}} hair is still messy. You notice you are late for school. If you eat breakfast, you'll feel better but you might be tardy. What would you like to do?</p>
+</div>
+
+<button type="button" (click) = "eatBreakfast()" routerLink = "eat">Eat!</button>
+<button type="button" (click) = "leaveForSchool()" routerLink = "leave">Leave now!</button>
+
+<div class="points">
+  {{players[0].points}}
+</div>
